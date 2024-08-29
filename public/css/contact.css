@@ -1,0 +1,147 @@
+/* Contact Page Styles */
+#contact {
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-content form {
+  flex-basis: 60%;
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.contact-info {
+  flex-basis: 35%;
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  #contact {
+    padding: 40px 15px;
+  }
+
+  #contact h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-content form,
+  .contact-info {
+    flex-basis: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group textarea,
+  .contact-info p {
+    font-size: 14px;
+  }
+
+  .contact-info h3 {
+    font-size: 18px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #contact {
+    padding: 50px 20px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-content form,
+  .contact-info {
+    flex-basis: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group textarea,
+  .contact-info p {
+    font-size: 15px;
+  }
+
+  .contact-info h3 {
+    font-size: 19px;
+  }
+}
+
+/* Small notebooks */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .contact-content form {
+    flex-basis: 55%;
+    padding: 35px;
+  }
+
+  .contact-info {
+    flex-basis: 40%;
+    padding: 35px;
+  }
+}
+
+/* Large notebooks and desktops */
+@media only screen and (min-width: 1280px) {
+  /* Garde les styles par défaut */
+}

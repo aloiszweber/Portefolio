@@ -1,0 +1,104 @@
+/* Skills Page Styles */
+#skills {
+  padding: 60px 20px;
+}
+
+#skills h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.skill-card {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Media Queries */
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  #skills {
+    padding: 40px 15px;
+  }
+
+  #skills h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .skill-card h3 {
+    font-size: 18px;
+  }
+
+  .skill-card p {
+    font-size: 14px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #skills {
+    padding: 50px 20px;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .skill-card {
+    padding: 25px;
+  }
+
+  .skill-card h3 {
+    font-size: 19px;
+  }
+
+  .skill-card p {
+    font-size: 15px;
+  }
+}
+
+/* Small notebooks */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .skill-grid {
+    grid-gap: 30px;
+  }
+
+  .skill-card {
+    padding: 25px;
+  }
+}
+
+/* Large notebooks and desktops */
+@media only screen and (min-width: 1280px) {
+  /* Garde les styles par défaut */
+}

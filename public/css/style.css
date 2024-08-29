@@ -1,0 +1,617 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+header nav {
+  position: relative; /* Assure que le positionnement absolu des éléments internes est relatif à cet élément */
+}
+
+#language-selector {
+    margin-top: 15px;
+    position: absolute;
+    top: -20px;
+    right: -25px;
+    /* background-color: #fff; */
+    /* border: 1px solid #ccc; */
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.language-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.language-list li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.language-list a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.language-list img {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.language-list a:hover {
+  text-decoration: underline;
+}
+
+
+/* Hero Section Styles */
+#hero {
+  background-color: #f2f2f2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  width: 80vw;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Skills Section Style */
+
+.skill-list {
+  list-style-type: none; /* Masque les puces */
+  padding: 0; /* Supprime le retrait par défaut des listes */
+}
+
+.skill-list li {
+  text-align: justify; /* Justifie le texte */
+  margin-bottom: 20px; /* Ajoute un espace entre les éléments de la liste */
+}
+
+.skill-list h3 {
+  margin-bottom: 5px; /* Ajoute un petit espace sous le titre */
+}
+
+.skill-list p {
+  text-align: justify; /* Justifie également le texte des paragraphes */
+  font-size: 20px;
+}
+
+
+/* Skills Section Styles */
+#skills {
+  padding: 20px 20px;
+}
+
+#skills h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.skill-card {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 10px;
+  /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);*/
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Projects Section Styles */
+#projects {
+  background-color: #f2f2f2;
+  padding: 20px 20px;
+}
+
+#projects h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);*/
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 17px;
+  margin: 20px;
+}
+
+.project-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 20px 20px;
+}
+
+/* About Page Styles */
+#about {
+  padding: 60px 20px;
+}
+
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-text p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Contact Page Styles */
+#contact {
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-content form {
+  flex-basis: 60%;
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.contact-info {
+  flex-basis: 35%;
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Carousel Styles */
+
+.carousel-description {
+  display: none;
+}
+.carousel-description.visible {
+  display: block !important;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 40%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Confirmation Page Styles */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f2f2f2; /* Utilisation de la couleur de fond similaire à celle des autres sections */
+  border-radius: 10px; /* Bordures arrondies comme dans les autres sections */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 28px; /* Taille de police similaire aux autres titres de sections */
+  color: #333; /* Couleur de texte similaire aux autres titres */
+  margin-bottom: 20px; /* Espacement en bas du titre pour cohérence */
+}
+
+.container p {
+  font-size: 18px; /* Taille de police cohérente avec les autres paragraphes */
+  color: #555; /* Couleur de texte légèrement plus douce pour les paragraphes */
+  line-height: 1.6; /* Hauteur de ligne similaire aux autres sections pour lisibilité */
+  margin-bottom: 20px; /* Espacement en bas des paragraphes */
+}
+
+.container a {
+  color: #333; /* Couleur des liens cohérente avec celle des autres liens */
+  text-decoration: none; /* Retrait du soulignement par défaut */
+  font-weight: bold; /* Poids de la police en gras pour les liens */
+  border-bottom: 2px solid transparent; /* Bordure sous les liens pour un effet visuel similaire */
+  transition: border-color 0.3s ease; /* Transition douce pour le changement de couleur de la bordure */
+}
+
+.container a:hover {
+  border-bottom: 2px solid #333; /* Bordure sous les liens au survol pour l'interaction visuelle */
+}
+
+/* Error Page Styles */
+.container_error {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f2f2f2; /* Utilisation de la même couleur de fond que les autres sections */
+  border-radius: 10px; /* Bordures arrondies pour la cohérence */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour maintenir l'aspect du design */
+  text-align: center; /* Alignement centré du texte pour une meilleure lisibilité */
+}
+
+.container_error h1 {
+  font-size: 28px; /* Taille de police cohérente avec les autres titres de section */
+  color: #333; /* Couleur de texte similaire aux autres titres pour la continuité */
+  margin-bottom: 20px; /* Espacement en bas du titre pour maintenir la hiérarchie typographique */
+}
+
+.container_error p {
+  font-size: 18px; /* Taille de police cohérente avec les autres paragraphes */
+  color: #555; /* Couleur de texte légèrement plus douce pour les paragraphes */
+  line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+  margin-bottom: 20px; /* Espacement en bas des paragraphes pour la séparation visuelle */
+}
+
+.container_error a {
+  color: #333; /* Couleur des liens cohérente avec les autres pages */
+  text-decoration: none; /* Retrait du soulignement par défaut des liens */
+  font-weight: bold; /* Poids de la police en gras pour les liens */
+  border-bottom: 2px solid transparent; /* Bordure sous les liens pour un effet visuel propre */
+  transition: border-color 0.3s ease; /* Transition douce pour le changement de couleur de la bordure au survol */
+}
+
+.container_error a:hover {
+  border-bottom: 2px solid #333; /* Bordure sous les liens au survol pour l'interaction visuelle */
+}
+
+
+  /* Smartphone-specific styles for language flags in navigation */
+@media only screen and (max-width: 767px) {
+  #language-selector {
+    top: -33px;
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    padding: 10px; /* Ajoute un peu d'espace autour des éléments */
+  }
+
+  .language-list {
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+  }
+
+  .language-list li {
+    margin-bottom: 10px; /* Ajoute un espace entre les éléments */
+  }
+
+  .language-list img {
+    width: 14px; /* Ajuste la taille des drapeaux pour les petits écrans */
+    height: auto; /* Conserve le ratio d'aspect */
+  }
+
+  .cta {
+    font-size: 12px !important;
+  }
+  
+  nav a {
+    font-size: 13px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  nav li {
+    margin-right: 8px;
+    margin-bottom: 10px;
+  }
+
+  #hero {
+    padding: 40px 15px;
+  }
+
+  #hero h2 {
+    font-size: 20px;
+  }
+
+  #hero p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .carousel {
+    height: 200px;
+  }
+  .carousel-caption h2 {
+    font-size: 24px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+
+  .skill-list p {
+  font-size: 14px !important;
+}
+
+.skill-list h3 {
+  font-size: 16px !important;
+}
+
+#projects h2 {
+    font-size: 16px !important;
+
+}
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  nav a {
+    font-size: 14px;
+  }
+
+  #hero {
+    padding: 50px 20px;
+  }
+
+  #hero h2 {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .carousel {
+    height: 250px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 26px;
+  }
+
+  .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .cta {
+    font-size: 12px !important;
+}
+
+.skill-list p {
+    font-size: 16px !important;
+}
+
+.skill-list h3 {
+    font-size: 18px !important;
+}
+
+#projects h2 {
+    font-size: 18px !important;
+
+}
+
+}
+
+/* Small notebooks */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+  #hero h2 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .carousel {
+    height: 320px;
+  }
+}
+
+.cta {
+  font-size: 16px;
+}
+
+.skill-list h3 {
+    font-size: 22px;
+}
+
+#projects h2 {
+    font-size: 22px;
+
+}
+
+.skill-list p {
+    font-size: 18px;
+}
+
+/* Large notebooks and desktops */
+@media only screen and (min-width: 1280px) {
+  /* Garde les styles par défaut */
+}

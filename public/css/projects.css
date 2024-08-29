@@ -1,0 +1,113 @@
+/* Projects Page Styles */
+#projects {
+  padding: 60px 20px;
+}
+
+#projects h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.project-card {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.project-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 20px 20px;
+}
+
+/* Media Queries */
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  #projects {
+    padding: 40px 15px;
+  }
+
+  #projects h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+    margin: 0 15px 15px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #projects {
+    padding: 50px 20px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+  .project-card h3 {
+    font-size: 19px;
+  }
+
+  .project-card p {
+    font-size: 15px;
+  }
+}
+
+/* Small notebooks */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .project-grid {
+    grid-gap: 30px;
+  }
+
+  .project-card img {
+    height: 190px;
+  }
+}
+
+/* Large notebooks and desktops */
+@media only screen and (min-width: 1280px) {
+  /* Garde les styles par défaut */
+}
