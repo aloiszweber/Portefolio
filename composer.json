@@ -1,0 +1,15 @@
+{
+    "name": "aloiszweber/portefolio",
+    "description": "Un portfolio interactif pour présenter mes compétences en développement web, mes projets et mon parcours professionnel. Ce site est conçu pour démontrer mes compétences en HTML, CSS, JavaScript, ainsi qu'en frameworks modernes comme React et en développement backend avec PHP. Vous y trouverez une présentation de mes projets et mes certifications.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aloïs Zweber"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
